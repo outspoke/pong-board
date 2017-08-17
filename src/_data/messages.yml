@@ -1,0 +1,15 @@
+- username: Groucho
+  text: It is better to have loft and lost than to never have loft at all.
+  images:
+    - http://lorempixel.com/1000/1000/nightlife?1
+    - http://lorempixel.com/1000/1000/nightlife?2
+- username: Groucho
+  text: I've had a perfectly wonderful evening. But this wasn't it.
+  images:
+    - http://lorempixel.com/1000/1000/nightlife?3
+    - http://lorempixel.com/1000/1000/nightlife?4
+- username: Groucho
+  text: I came here for a party and what do I get? Nothing. Not even Ice cream.
+  images:
+    - http://lorempixel.com/1000/1000/nightlife?5
+    - http://lorempixel.com/1000/1000/nightlife?6

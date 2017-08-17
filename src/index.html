@@ -1,42 +1,34 @@
 ---
-layout: default
+layout: contained
 ---
-<div class="grid-y grid-frame">
-  <header class="cell shrink header">
-    <h2>
-      <img src="{{ "assets/img/logo.svg" | relative_url }}" />
-      PONG BOARD
-    </h2>
-  </header>
-  <div class="cell auto cell-block-container align-center-middle">
-    <div class="grid-x grid-margin-x align-center">
-      <div class="cell small-11 medium-11 large-10 xlarge-8">
-        <div class="grid-x grid-padding-x grid-padding-y masonry-style">
-          <div class="cell xlarge-8">
-            <div class="grid-x message align-middle">
-              <div class="cell">
-                <p>
-                  From: username
-                </p>
-                <h1 class="script">
-                  People Love Sharing Photos of Their Adventures
-                </h1>
-              </div>
+<div class="masonry-style-carousel">
+  {% for message in site.data.messages %}
+    <div class="slide">
+      <div class="grid-x grid-padding-x grid-padding-y masonry-style">
+        <div class="cell large-8">
+          <div class="grid-x message align-middle">
+            <div class="cell">
+              <p>
+                From: {{ message.username }}
+              </p>
+              <h1 class="script">
+                {{ message.text }}
+              </h1>
             </div>
           </div>
-          <div class="cell xlarge-4">
-            <div class="grid-x grid-padding-y grid-padding-x">
-              <div class="cell small-8 xlarge-12">
-                <img src="http://lorempixel.com/1000/1000/nightlife?1" />
-              </div>
-              <div class="cell small-4 xlarge-12">
-                <div class="grid-x grid-padding-x grid-padding-y xlarge-up-2">
-                  <div class="cell">
-                    <img src="http://lorempixel.com/1000/1000/nightlife?2" />
-                  </div>
-                  <div class="cell">
+        </div>
+        <div class="cell large-4">
+          <div class="grid-x grid-padding-y grid-padding-x">
+            <div class="cell small-8 large-12">
+              <img class="img-1" src="{{ message.images[0] }}" />
+            </div>
+            <div class="cell small-4 large-12">
+              <div class="grid-x grid-padding-x grid-padding-y large-up-2">
+                <div class="cell">
+                  <img class="img-2" src="{{ message.images[1] }}" />
+                </div>
+                <div class="cell">
 
-                  </div>
                 </div>
               </div>
             </div>
@@ -44,8 +36,5 @@ layout: default
         </div>
       </div>
     </div>
-  </div>
-  <footer class="cell shrink footer">
-    <h2>TEXT  2-(316)112-9724 TO SHARE A GREAT PHOTO</h2>
-  </footer>
+  {% endfor %}
 </div>

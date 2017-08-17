@@ -16,9 +16,20 @@ layout: compress
     {% endif %}
   </head>
   <body>
-
-    {{ content }}
-
+    <div class="grid-y grid-frame">
+      <header class="cell shrink header">
+        <h2>
+          <img src="{{ "assets/img/logo.svg" | relative_url }}" />
+          PONG BOARD
+        </h2>
+      </header>
+      <div class="cell auto cell-block-container">
+        {{ content }}
+      </div>
+      <footer class="cell shrink footer">
+        <h2>TEXT  2-(316)112-9724 TO SHARE A GREAT PHOTO</h2>
+      </footer>
+    </div>
     <script src="{{ 'assets/app.js' | relative_url }}"></script>
   </body>
 </html>
