@@ -1,0 +1,15 @@
+.header,
+.footer {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  img {
+    max-height: rem-calc(36);
+    vertical-align: middle;
+  }
+}
+
+.footer {
+  letter-spacing: rem-calc(2);
+}

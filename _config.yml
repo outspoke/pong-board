@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Amethyst
-email: change-me@jayarnielsen.com
+title: Pong Board
+email: jay@outspoke.co
 description: > # this means to ignore newlines until "baseurl:"
-  Amethyst is a Jekyll Starter Theme Inspired by Sage 9
-baseurl: "" # the subpath of your site, e.g. /blog
+  TEXT  2-(316)112-9724 TO SHARE A GREAT PHOTO
+baseurl: "/pong-board" # the subpath of your site, e.g. /blog
 url: "https://github.com/jayarnielsen/amethyst" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
 

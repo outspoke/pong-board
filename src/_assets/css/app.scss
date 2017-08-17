@@ -55,7 +55,7 @@
 @include motion-ui-animations;
 
 // Cutom Styles
+@import 'fonts';
 @import 'global';
 @import 'structure';
-@import 'pages';
-@import 'posts';
+@import 'masonry';

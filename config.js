@@ -24,13 +24,13 @@ module.exports = {
     watcher: !!argv.watch,
   },
   env: Object.assign({ production: isProduction, development: !isProduction }, argv.env),
-  devUrl: 'http://127.0.0.1:4000/',
+  devUrl: 'http://127.0.0.1:4000/pong-board/',
   proxyUrl: 'http://localhost:3000',
   watch: [
     "dist/**/*.html",
   ],
   open: true,
-  publicPath: '/assets',
+  publicPath: '/pong-board/assets/',
 }
 
 if (process.env.NODE_ENV === undefined) {
