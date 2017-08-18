@@ -6,7 +6,7 @@
   "homepage": "https://github.com/jayarnielsen/amethyst",
   "license": "MIT",
   "scripts": {
-    "serve": "bundle exec jekyll serve --drafts",
+    "serve": "bundle exec jekyll serve --drafts --incremental",
     "watch": "webpack --hide-modules --watch --config webpack.config.js",
     "start": "concurrently --kill-others --names 'JKYL,WBPK' -c 'red,blue' 'yarn serve' 'yarn watch'",
     "build": "webpack --progress -p --config webpack.config.js && JEKYLL_ENV=production bundle exec jekyll build",
@@ -33,6 +33,8 @@
     "git-directory-deploy": "^1.5.1",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-webpack-plugin": "^1.5.0-beta.0",
+    "js-yaml": "^3.9.1",
+    "json-loader": "^0.5.7",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.6",
     "postcss-safe-parser": "^3.0.1",
@@ -42,13 +44,15 @@
     "stylelint": "^8.0.0",
     "stylelint-config-standard": "^17.0.0",
     "stylelint-webpack-plugin": "^0.9.0",
+    "url-join": "^2.0.2",
     "url-loader": "^0.5.9",
     "webpack": "^3.4.1",
     "webpack-merge": "^4.1.0",
+    "yaml-loader": "^0.5.0",
     "yargs": "^8.0.2"
   },
   "dependencies": {
-    "foundation-sites": "^6.4.2",
+    "foundation-sites": "^6.4.3",
     "motion-ui": "^1.2.3",
     "owl.carousel": "^2.2.0",
     "slick-carousel": "^1.7.1"
